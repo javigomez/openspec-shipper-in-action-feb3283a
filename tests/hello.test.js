@@ -25,3 +25,15 @@ test("returns the default Spanish greeting for a blank name", () => {
 test("falls back to English for an unknown language", () => {
   assert.equal(greeting("Ada", "fr"), "Hello, Ada!");
 });
+
+test("shouts an English greeting", () => {
+  assert.equal(greeting("Ada", "en", true), "HELLO, ADA!");
+});
+
+test("shouts a Spanish greeting", () => {
+  assert.equal(greeting("Ada", "es", true), "HOLA, ADA!");
+});
+
+test("does not shout by default", () => {
+  assert.equal(greeting("Ada", "es"), "Hola, Ada!");
+});
