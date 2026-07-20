@@ -1,0 +1,9 @@
+{
+  "includeGitInstructions": false,
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true,
+    "failIfUnavailable": true,
+    "allowUnsandboxedCommands": false
+  }
+}
